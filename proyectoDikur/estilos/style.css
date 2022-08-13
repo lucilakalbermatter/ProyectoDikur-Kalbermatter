@@ -31,6 +31,12 @@ nav {
     font-size: 1.3rem;
 }
 
+.nav-link:hover{
+    background-color: rgb(67, 67, 67);
+    color: #eee;
+    border-radius: 5rem;
+}
+
 .navLogo img {
     margin-top: 1rem;
     margin-bottom: 1rem;
