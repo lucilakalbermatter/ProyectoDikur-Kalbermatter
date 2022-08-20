@@ -29,6 +29,7 @@ nav {
 .nav-link {
     color: black;
     font-size: 1.3rem;
+    border-radius: 5rem;
 }
 
 .nav-link:hover{
@@ -508,3 +509,4 @@ footer a:visited {
     }
 
 }
+
