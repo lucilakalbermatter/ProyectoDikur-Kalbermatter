@@ -421,6 +421,7 @@ form {
   }
 }
 /* ***************************** MIN-WIDTH 1024px ***************************** */
+
 @media (min-width: 1024px) {
   /*==================== INICIO ==================== */
   /* SECTION CONTAINER */
@@ -440,3 +441,4 @@ form {
     height: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
+
