@@ -3,8 +3,7 @@ nav {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .4);
 
     .navbar-toggler {
-        width: 60px;
-        height: 35px;
+        @include sizes (35px, 60px);
     }
 
     .nav-link {
@@ -31,4 +30,3 @@ nav {
         }
     }
 }
-

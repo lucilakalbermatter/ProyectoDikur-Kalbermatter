@@ -4,6 +4,12 @@
 $hover: rgb(245, 200, 208);
 $colorTitle: rgb(133, 131, 131);
 
+/* Mixin */
+@mixin sizes ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
 
 * {
     margin: 0;
@@ -39,6 +45,15 @@ body {
     }
 }
 
+.button-submit {
+    @extend .button;
+
+    &:hover {
+        background-color: #333;
+        color: white;
+    }
+}
+
 .title {
     width: 100%;
     padding: 2rem;
@@ -47,3 +62,4 @@ body {
     color: white;
     background-color: $colorTitle;
 }
+
