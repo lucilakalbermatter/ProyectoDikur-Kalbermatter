@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,200;0,300;1,200&family=Roboto:ital,wght@1,300;1,400&family=Square+Peg&display=swap");
 /*==================== GENERALES ==================== */
 /* Variables */
+/* Mixin */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.button {
+.button, .button-submit {
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 1rem;
@@ -25,13 +26,18 @@ body {
   border-radius: 2rem;
   cursor: pointer;
 }
-.button a {
+.button a, .button-submit a {
   text-decoration: none;
   color: rgba(18, 14, 16, 0.9);
 }
-.button:hover {
+.button:hover, .button-submit:hover {
   background-color: rgb(245, 200, 208);
   color: rgba(18, 14, 16, 0.9);
+}
+
+.button-submit:hover {
+  background-color: #333;
+  color: white;
 }
 
 .title {
@@ -48,8 +54,8 @@ nav {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 }
 nav .navbar-toggler {
-  width: 60px;
   height: 35px;
+  width: 60px;
 }
 nav .nav-link {
   color: black;
@@ -96,9 +102,9 @@ footer p i:hover {
 /*==================== INICIO ==================== */
 /* SECTION CONTAINER */
 .containerInicio {
-  background-image: url(../images/Screen\ Shot\ 2022-08-05\ at\ 19.55.47.png);
-  width: 100%;
   height: 650px;
+  width: 100%;
+  background-image: url(../images/Screen\ Shot\ 2022-08-05\ at\ 19.55.47.png);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -111,9 +117,9 @@ footer p i:hover {
 }
 
 .box {
-  background-color: rgba(18, 14, 16, 0.9);
   height: 200px;
   width: 300px;
+  background-color: rgba(18, 14, 16, 0.9);
   justify-content: center;
   justify-items: start;
   text-align: center;
@@ -132,7 +138,7 @@ footer p i:hover {
   margin-top: 3rem;
 }
 
-.box h3 {
+.box h2 {
   font-size: 1.8rem;
   font-style: italic;
   color: white;
@@ -183,7 +189,7 @@ footer p i:hover {
   align-items: center;
 }
 
-.sectionHijo h2 {
+.sectionHijo h4 {
   font-size: 2rem;
   text-align: center;
   font-weight: normal;
@@ -289,8 +295,8 @@ footer p i:hover {
 }
 
 .foto {
-  width: 100%;
   height: 60rem;
+  width: 100%;
   opacity: 0.4;
   border-radius: 7rem;
   border: 1px solid gray;
@@ -335,11 +341,6 @@ form {
   background-image: linear-gradient(to bottom right, #f1c0c7, #fbdee1);
 }
 
-.buttonContacto:hover {
-  background-color: #333;
-  color: white;
-}
-
 /* ***************************** MIN-WIDTH 500px ******************************** */
 @media (min-width: 500px) {
   /*==================== PRECIOS ==================== */
@@ -349,8 +350,8 @@ form {
   }
   /*==================== CUIDADOS ==================== */
   .foto {
-    width: 100%;
     height: 60rem;
+    width: 100%;
     margin-top: 2rem;
     opacity: 0.4;
     border-radius: 7rem;
@@ -421,7 +422,6 @@ form {
   }
 }
 /* ***************************** MIN-WIDTH 1024px ***************************** */
-
 @media (min-width: 1024px) {
   /*==================== INICIO ==================== */
   /* SECTION CONTAINER */
@@ -437,8 +437,7 @@ form {
     margin-bottom: 1rem;
   }
   .sectionHijo img {
-    width: 300px;
     height: 300px;
+    width: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
-
