@@ -8,3 +8,5 @@ Repositorio únicamente con fines educativos para CoderHouse Argentina.
 2. Maquetar con bootstrap
 3. Aplicar SASS
 4. Aplicar SEO
+5. Full responsive
+6. Subida al servidor
